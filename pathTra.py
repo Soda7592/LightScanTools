@@ -49,7 +49,7 @@ index = Make_wordlistIndex(3)
 
 l = []
 for i in range(len(index)-1) :
-    print(index[i], index[i+1])
+    #print(index[i], index[i+1])
     t = threading.Thread(target=UrlPathTravel, args=(index[i], index[i+1], i, ))
     l.append(t)
     t.start()
